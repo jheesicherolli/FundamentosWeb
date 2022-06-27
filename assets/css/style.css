@@ -1,0 +1,101 @@
+/****************Estilos da página index.html*********************/
+.center{
+     text-align: center;
+    /*text-align é para alinhar o texto*/
+}
+
+.container{
+    display:flex;
+    flex-flow: row;
+    /*wrap= para quebrar a linha*/
+    justify-content: center;
+    /*justify-content me permite decidir onde quero alinhar, se é na esquerda, direita...*/
+    align-items: center;
+    /*align-items, alinha os itens, no caso, deixa eles centrados com a imagem*/
+}
+
+#menu li{
+    /*especifiquei que dentro do meu menu quero a lista li (lista não ordenada)*/
+    display: inline;
+    padding: 10px;
+    /*padding = espaçamento interno dentro do meu conteúdo, dentro do elemento, conta o espaço de dentro*/
+    /*magin = conta o espaço de fora do elemento*/
+}
+
+.justify{
+    text-align:justify
+}
+
+#menu li a{
+    /*especifiquei que quero o que está dentro de a, que por sua vez está dentro de li*/
+     text-decoration: none;
+     /*text-decoration: none; = tiro a linha sublinhada*/
+     color: black;
+     font-size: 20px;
+}
+
+#menu li a:hover{
+    /*hover é pra que quando passar o mouse por cima do link ele mude de cor*/
+    color: rgb(221, 8, 139);
+
+}
+
+.p-20{
+    padding: 20px;
+    /*seletor para dizer o tamanho do espaçamento*/
+}
+
+.br-50{
+    border-radius:50%;
+    /*deixa minha imagem redonda*/
+}
+
+.wh{
+    /*estruturo melhor minha imagem*/
+    width: 400px;
+    /*largura*/
+    height: 550px;
+    /*altura*/
+    padding: 30px;
+}
+
+.tm-social{
+    width: 50px;
+    height: 50px
+}
+
+.mb-50{
+    margin-bottom: 50px;
+    /*margin-bottom = margem pra baixo*/
+}
+
+/***********Estilos da página contato.html***************/
+
+.ml-50{
+    margin-left: 50px;
+    /*margem na esquerda*/
+}
+
+.mr-50{
+    margin-right: 50px;
+    
+}
+
+/***********Estilos da página participacoes.html***************/
+
+.wh2{
+   width: 550px;
+   height: 270px;
+   /*configuração das imagens*/
+}
+
+.wh3{
+    width: 550px;
+    height: 350px;
+    /*configuração do vídeo 1º* e da 2º imagem*/
+}
+
+.mb-60{
+    margin-bottom: 60px;
+    /*margin-bottom = margem pra baixo*/
+}
