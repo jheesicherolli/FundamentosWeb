@@ -124,3 +124,7 @@
     margin-bottom: 60px;
     /*margin-bottom = margem pra baixo*/
 }
+
+.tr{
+    transition: 2s;
+}

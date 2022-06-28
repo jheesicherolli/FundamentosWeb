@@ -48,7 +48,6 @@
     <div class="container ml-50">
 
      <div>
-        
             <img class="wh3" src="./assets/img/spider-man-no-way-home.png" alt="Zendaya no filme do Homem Aranha">
           
     <h4>Trailer de uma das Participações</h4>
@@ -87,7 +86,11 @@
      style="border:0;" 
      allowfullscreen="" 
      loading="lazy" 
-     referrerpolicy="no-referrer-when-downgrade"></iframe>
+     referrerpolicy="no-referrer-when-downgrade"
+     id="mapa"
+     onmousemove="mapaZoom()"
+     onmouseout="mapaNormal()"
+     class="tr"></iframe>
     </div>
     
    <div class="ml-50">
@@ -95,19 +98,20 @@
     <h3>Quer entrar em contato? Preencha o formulário abaixo! </h2>
     <form >
         <label for="nome">Nome:</label> <br>
-        <input type="text" name="" id="nome">
-        <br>
+        <input type="text" id="nome" onkeyup = 'validaNome()'>
+        <div id="txtNome"></div>
         <br>
         <!--lembrando que br não é uma boa prática-->
         <label for="email">Email:</label> <br>
-        <input type="email" id="email">
-        <br>
+        <input type="email" id="email" onkeyup = 'validaEmail()'>
+        <div id="txtEmail"></div>
         <br>
         <label for="assunto">Assunto:</label><br>
-        <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+        <textarea name="assunto" id="assunto" cols="30" rows="10" onkeyup = 'validaAssunto()'></textarea>
+        <div id="txtAssunto"></div>
         <br>
         <br>
-        <button>Submit</button>
+        <button onclick="enviar()">Submit</button>
     </form>
 
     </div>
@@ -117,10 +121,11 @@
      <footer class="center">
 
         <div class="container">
-            <a href="https://www.linkedin.com/in/jennifer-sicherolli-297215168/" target="_blank"><img class="tm-social p-20" src="assets/img/linkedin.png" alt="logo do Linkedin"></a>
+            <a href="https://www.linkedin.com/in/jennifer-sicherolli-297215168/" target="_blank"><img class="tm-social p-20" src="assets/img/linkedin.png" alt="logo do Linkedin" ></a>
             <a href="https://github.com/jheesicherolli" target="_blank"><img class="tm-social p-20" src="assets/img/github.png" alt="Logo do GitHub"></a>
             <a href="https://www.instagram.com/jhee_sicherolli/" target="_blank"><img class="tm-social p-20" src="assets/img/instagram.png" alt="Logo do Instagram"></a>
         </div>
+    </style>
 
         <div class="glass mb-50">
         <p>
@@ -129,6 +134,8 @@
         </div>
 
      </footer>
+
+     <script src="assets/js/script.js"> </script>
     
 </body>
 </html>
